@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es" style="background:#0a0a0a;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentín García — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">valentin.garcia</a>
+  <ul class="nav-links">
+    <li><a href="#experiencia">experiencia</a></li>
+    <li><a href="#proyectos">proyectos</a></li>
+    <li><a href="#sobre-mi">sobre mí</a></li>
+    <li><a href="#contacto">contacto</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-badge">
+    <span class="badge-dot"></span>disponible · San Nicolás de los Arroyos
+  </div>
+  <h1>
+    Hola, soy<br>
+    <span class="dim">Valentín</span><br>
+    García.
+  </h1>
+  <p class="hero-desc">
+    Programador en desarrollo, estudiante de la UTN San Nicolás. Construí sistemas reales para PagoFácil: stock, documentación de clientes y recibos PDF — todo integrado en una sola interfaz.
+  </p>
+  <div class="hero-ctas">
+    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+    <a href="#contacto" class="btn btn-secondary">Contacto</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- EXPERIENCIA -->
+<section id="experiencia">
+  <div class="section-label fade-up">experiencia</div>
+  <h2 class="fade-up">Trayectoria</h2>
+  <p class="section-sub fade-up">Dónde trabajé y qué construí.</p>
+
+  <div class="timeline fade-up">
+    <div class="timeline-line"></div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">2024 — presente</div>
+      <div class="timeline-title">PagoFácil · Zeroxsiento · Almafuerte 298, San Nicolás</div>
+      <div class="timeline-desc">
+        Operador del local y desarrollador interno. Además de las tareas diarias del punto de pago, identifiqué necesidades reales y diseñé tres sistemas propios que automatizan la gestión: control de stock, documentación de clientes y generación de recibos en PDF. Todo convive en una misma interfaz, accesible con un solo usuario.
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="section-label fade-up">proyectos</div>
+  <h2 class="fade-up">Sistemas integrados</h2>
+  <p class="section-sub fade-up">Tres herramientas en una sola interfaz. Un usuario, todo disponible.</p>
+
+  <div class="projects-grid fade-up">
+
+    <!-- STOCK -->
+    <div class="project-card">
+      <span class="project-integrated-badge">integrado</span>
+      <div class="project-card-icon">📦</div>
+      <h3>Stock & Inventario</h3>
+      <div class="project-mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+        </div>
+        <div class="mockup-line" style="width:55%;"></div>
+        <div class="mockup-row">
+          <div class="mockup-cell"></div>
+          <div class="mockup-cell"></div>
+        </div>
+        <div class="mockup-row">
+          <div class="mockup-cell" style="background:#161616;"></div>
+          <div class="mockup-cell" style="background:#161616;"></div>
+        </div>
+        <div class="mockup-btn"></div>
+      </div>
+      <p>Control de inventario para productos Saphirus y artículos varios. Registro de entradas y salidas con estado actualizado al instante.</p>
+      <div class="project-tags">
+        <span class="tag">localStorage</span>
+        <span class="tag">HTML / CSS / JS</span>
+        <span class="tag">sin backend</span>
+      </div>
+      <ul class="project-features">
+        <li>Registro de productos con nombre y cantidad</li>
+        <li>Alta, baja y modificación de stock</li>
+        <li>Vista de inventario de un vistazo</li>
+        <li>Pensado para el uso real del local</li>
+      </ul>
+    </div>
+
+    <!-- DOCUMENTACIÓN -->
+    <div class="project-card">
+      <span class="project-integrated-badge">integrado</span>
+      <div class="project-card-icon">🗂️</div>
+      <h3>Documentación de clientes</h3>
+      <div class="project-mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+        </div>
+        <div class="mockup-input">
+          <span class="mockup-input-text">Buscar por DNI o nombre...</span>
+        </div>
+        <div class="mockup-line" style="width:100%; height:44px; border-radius:4px; background:#161616; margin-bottom:6px;"></div>
+        <div class="mockup-btn" style="width:100%; background:#222;"></div>
+      </div>
+      <p>El cliente llega sin papeles: ingresás su DNI o nombre y aparece toda su información guardada. Facturas, vencimientos, notas — todo en pantalla.</p>
+      <div class="project-tags">
+        <span class="tag">búsqueda instantánea</span>
+        <span class="tag">localStorage</span>
+        <span class="tag">textarea</span>
+      </div>
+      <ul class="project-features">
+        <li>Búsqueda por DNI o nombre</li>
+        <li>Textarea libre para cualquier info</li>
+        <li>Alta y edición de registros rápida</li>
+        <li>Sin necesidad de traer papeles</li>
+      </ul>
+    </div>
+
+    <!-- RECIBOS -->
+    <div class="project-card">
+      <span class="project-integrated-badge">integrado</span>
+      <div class="project-card-icon">🧾</div>
+      <h3>Generador de recibos PDF</h3>
+      <div class="project-mockup">
+        <div class="mockup-bar">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+        </div>
+        <div class="mockup-input">
+          <span class="mockup-input-text">Nombre y apellido</span>
+        </div>
+        <div class="mockup-row">
+          <div class="mockup-input" style="margin:0;">
+            <span class="mockup-input-text">DNI</span>
+          </div>
+          <div class="mockup-input" style="margin:0;">
+            <span class="mockup-input-text">$ Monto</span>
+          </div>
+        </div>
+        <div class="mockup-btn" style="background:#2a2a2a; margin-top:6px; width:80px;"></div>
+      </div>
+      <p>Cargás nombre, DNI y monto. Se genera un PDF con número de recibo autoincremental, fecha, hora y comentario opcional. Descarga inmediata.</p>
+      <div class="project-tags">
+        <span class="tag">jsPDF</span>
+        <span class="tag">numeración auto</span>
+        <span class="tag">PDF</span>
+      </div>
+      <ul class="project-features">
+        <li>Nro. de recibo autoincrementado</li>
+        <li>Fecha y hora automáticas</li>
+        <li>Campo de comentario libre</li>
+        <li>Descarga instantánea en PDF</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi">
+  <div class="section-label fade-up">sobre mí</div>
+  <h2 class="fade-up">Quién soy</h2>
+
+  <div class="about-grid fade-up">
+    <div class="about-block">
+      <div class="about-block-label">historia</div>
+      <p>
+        Me llamo Valentín García, tengo 23 años y soy de San Nicolás de los Arroyos, Argentina. Actualmente estoy cursando la Tecnicatura Universitaria en Programación en la UTN San Nicolás.
+        <br><br>
+        Me apasiona construir cosas que resuelvan problemas reales. Mientras estudio, aplico lo que aprendo en proyectos concretos — como los sistemas que desarrollé para PagoFácil, el lugar donde trabajo. No espero tener el título para crear: cada proyecto es una oportunidad de aprender haciendo.
+        <br><br>
+        Soy un programador en desarrollo, con ganas de seguir creciendo, colaborar en proyectos desafiantes y eventualmente trabajar de forma profesional en el área.
+      </p>
+    </div>
+
+    <div class="about-block">
+      <div class="about-block-label">tecnologías</div>
+      <div class="skills-list">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">C#</span>
+        <span class="skill-pill">C++</span>
+        <span class="skill-pill">jsPDF</span>
+        <span class="skill-pill">localStorage</span>
+        <span class="skill-pill">diseño UI</span>
+        <span class="skill-pill">vanilla JS</span>
+        <span class="skill-pill">UTN · en curso</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-label fade-up">contacto</div>
+  <h2 class="fade-up">Hablemos</h2>
+
+  <div class="contact-inner fade-up">
+    <div>
+      <h3>¿Querés hablar de un proyecto?</h3>
+      <p>
+        Si necesitás comunicarte conmigo por algún proyecto, no dudes en escribirme. Estoy abierto a colaborar, aprender y construir cosas juntos.
+      </p>
+    </div>
+    <div class="contact-items">
+      <a class="contact-item" href="https://www.linkedin.com/in/valengarcia0401" target="_blank">
+        <div class="contact-item-icon">💼</div>
+        <div>
+          <div class="contact-item-label">LinkedIn</div>
+          <div class="contact-item-value">valengarcia0401</div>
+        </div>
+      </a>
+      <a class="contact-item" href="https://instagram.com/valengarcia0401" target="_blank">
+        <div class="contact-item-icon">📸</div>
+        <div>
+          <div class="contact-item-label">Instagram</div>
+          <div class="contact-item-value">@valengarcia0401</div>
+        </div>
+      </a>
+      <a class="contact-item" href="mailto:tu@email.com">
+        <div class="contact-item-icon">✉️</div>
+        <div>
+          <div class="contact-item-label">email</div>
+          <div class="contact-item-value">tu@email.com</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 · Valentín García · Todos los derechos reservados</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
